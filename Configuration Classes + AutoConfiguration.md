@@ -92,14 +92,14 @@ public @interface SpringBootApplication {
 ### **🔹 @CompoenetScan**
 - **<code>Spring Container 초기화 관련 annotation(1)</code>**
 - <code>@ComponentScan</code> annotaion이 현 패키지에서 <code>@Componenet</code> annotation이 붙어 있는 class들을 찾아서, <code>Bean</code>*으로 등록한다.
-- 본 과정에서 **직접 설정한 Bean들**도 함께 자동 생성된다.*
+- 본 과정에서 **직접 설정한 Bean들**도 함께 자동 생성된다.**
 - **직접 설정한 Bean들**: <code>@Controller</code>, <code>@RestController</code>, <code>@Service</code>, <code>@Repository</code>, <code>@Configuration에 등록한 @Bean</code> 
-- Spring Boot에서는 위 Bean들이 자동으로 생성되기 때문에 <code>ThreadPoolTaskExecutor</code>*를 사용할 수 있다.
-<br>
+- Spring Boot에서는 위 Bean들이 자동으로 생성되기 때문에 <code>ThreadPoolTaskExecutor</code>***를 사용할 수 있다.
+<br><br>
 *<code>Bean(빈)</code>: spring에서 관리하는 POJO(Plain Old Java Object)
 <br>
-*.excludeFilter에 해당하는 class는 제외<br>
-*<code>ThreadPoolTaskExecutor</code>: thread pool을 사용하는 executor로, 쉽게 multi-thread를 구현할 수 있도록 하는 class <br>
+**.excludeFilter에 해당하는 class는 제외<br>
+***<code>ThreadPoolTaskExecutor</code>: thread pool을 사용하는 executor로, 쉽게 multi-thread를 구현할 수 있도록 하는 class <br>
 ➡️ 참고: https://blog.outsider.ne.kr/1066
 
 <br>
